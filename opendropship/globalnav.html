@@ -1,0 +1,19 @@
+<div id="xo-globalnav" class="x2-nl x2-navigation">
+<ul>
+		<!-- menu en mode anonyme -->
+		<li><a href="<{xoAppUrl /}>" accesskey="a"  title="Accueil">Home</a></li>
+		<{if !$xoops_isuser}>
+		<li><a href="<{xoAppUrl modules/news/}>" accesskey="" title="News">News</a></li>
+		<li><a href="<{xoAppUrl modules/addresses/}>" accesskey="" title="Directory">Directory</a></li>
+        <li><a href="<{xoAppUrl modules/forum/}>" accesskey="" title="Forum">Forum</a></li>
+        <li><a href="<{xoAppUrl modules/register.php}>" accesskey="" title="Register">Register</a></li>
+		<{else}>
+		<!-- menu en mode enregistré -->
+		<li class="x2-label">Navigation</li>
+				<{if !$xoops_isuser}>
+		<li><a href="<{xoAppUrl modules/news/}>" accesskey="" title="News">News</a></li>
+		<li><a href="<{xoAppUrl modules/addresses/}>" accesskey="" title="Directory">Directory</a></li>
+        <li><a href="<{xoAppUrl modules/forum/}>" accesskey="" title="Forum">Forum</a></li>
+        <li><a href="<{xoAppUrl modules/register.php}>" accesskey="" title="Register">Register</a></li>
+		<{/if}><{/if}>
+	</ul></div>

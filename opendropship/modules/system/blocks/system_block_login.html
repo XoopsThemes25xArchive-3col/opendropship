@@ -1,0 +1,21 @@
+<img src="http://www.opendropship.com/themes/opendropship/img/AREA_MEMBRI.jpg" width="247" height="43" alt="Area Membri " />
+<div class="center"><form style="margin-top: 0px;" action="<{$xoops_url}>/user.php" method="post">
+    <div align="left"><{$block.lang_username}><br />
+      <input type="text" name="uname" size="24" value="<{$block.unamevalue}>" maxlength="25" />
+        <br />
+  <{$block.lang_password}><br />
+      <input type="password" name="pass" size="24" maxlength="32" />
+      <br />
+      <!-- <input type="checkbox" name="rememberme" value="On" class ="formButton" /><{$block.lang_rememberme}><br /> //-->
+      <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+      <input type="hidden" name="op" value="login" />
+      <input class="xo-formbuttons" type="submit" value="<{$block.lang_login}>" />
+      <br />
+  <{$block.sslloginlink}>
+    </div>
+</form>
+    <div align="left">
+      <p><a href="<{$xoops_url}>/user.php#lost"><{$block.lang_lostpass}></a></p>
+  </div>
+</div>
+<p>&nbsp;</p>
